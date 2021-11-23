@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+/* img{
+    vertical-align: top;
+} */
+
+#wrapper{
+    background-color: rgb(172, 166, 166);
+}
+.main{
+    background-color: rgb(172, 166, 166);
+}
+.tete{
+    background-color: rgb(255, 165,0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex_elan{
+    display: flex;
+    /* justify-content: inherit; */
+    color: white;
+    margin: auto;
+    padding: 0.4em;
+}
+a{
+    text-decoration: none;
+}
+.titre_h2{
+    text-align: center;
+    padding: 0.6em;
+}
+.fond{
+    background-color: rgb(81,81,81);
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding-right: 3em;
+}
+table{
+    border:1px solid black;
+    border-collapse: collapse;
+    width:100%;
+    table-layout: auto;
+}
+td{ 
+    border:1px solid black;
+    width:20%;
+    text-align: center;
+}
+.no_padding{
+    padding: 0;
+}
+.bloc{
+    background-color: white;
+    border: 1px solid rgb(255, 165, 0);
+}
+.taille{
+    width: 90%;
+    margin: auto;
+    padding: 1em 2em 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.equipe figure{
+    margin: auto;
+    width: 50%;
+    position: relative;
+    padding: 1em;
+    border: 1px solid rgb(255, 165, 0);
+    margin: 1em auto;
+}
+.equipe figcaption{
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background-color: rgb(255, 165, 0);
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+.equipe img{
+    width: 100%;
+}
+.elan_img{
+    width: 25%;
+}
+.portrait{
+    text-align: center;
+}
+.white{
+    color: white;
+}
+.align{
+    padding: 0 36px 0 12px;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    align-self: center;
+    text-shadow: 1px 1px 2px black;
+}
+.center1{
+    text-align: center;
+    color: white;
+    font-family: bold;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.banniere{
+    background-image: url(https://www.univ-nantes.fr/medias/photo/illustration-kerneis_1478097901349-jpg);
+    background-position: center;
+    background-size:cover;
+    height: 400px;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=envoyer] {
+    background-color: rgb(255, 165,0);
+    color: white;
+    padding: 12px 2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=envoyer]:hover {
+    background-color: rgb(255, 165,0);
+}
+  
+  /* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+footer{
+      background-color: rgb(81,81,81);
+}
+.footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    padding: 0.4em;
+}
+
+@media screen and (min-width: 422px) and (max-width:768px){
+    .tete{
+        justify-content: space-around;
+    }
+    .flex_elan{
+        display: flex;
+        color: white;
+        margin-left: 2%;
+        padding: 0.4em;
+        align-items: center;
+    }
+    .align{
+        text-align: center;
+        padding-left: 0.4em;
+    }
+    .titre_h2{
+        padding: 0.5em 0 0.5em 0;
+        text-align: left;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        color: white;
+        padding-right: 3em;
+        align-items: center;
+    }
+    .nav a{
+        margin: 0 1em;
+    }
+    .equipe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .equipe figure{
+        width: 28%;
+        border: 1px solid rgb(255, 165, 0);
+    }
+}
+
+@media screen and ( min-width:768px) and (max-width:1024px) {
+    .tete{
+        justify-content: space-around;
+    }
+    .flex_elan{
+        display: flex;
+        color: white;
+        margin-left: 2%;
+        padding: 0.4em;
+        align-items: center;
+    }
+    .align{
+        text-align: center;
+        padding-left: 0.4em;
+    }
+    .titre_h2{
+        padding: 0.5em 0 0.5em 0;
+        text-align: left;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        color: white;
+        padding-right: 3em;
+        align-items: center;
+    }
+    .taille {
+        padding: 1em 2em 2em;
+    }
+    .nav a{
+        margin: 0 1em;
+    }
+    .equipe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .equipe figure{
+        width: 16%;
+        border: 1px solid rgb(255, 165, 0);
+    }
+}
+@media screen and ( min-width:1024px ) {
+    .tete{
+        justify-content: space-around;
+    }
+    .flex_elan{
+        display: flex;
+        color: white;
+        margin-left: 2%;
+        padding: 0.4em;
+        align-items: center;
+    }
+    .align{
+        text-align: center;
+        padding-left: 0.4em;
+    }
+    .titre_h2{
+        padding: 1em 0;
+        text-align: left;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        color: white;
+        padding-right: 3em;
+        align-items: center;
+    }
+    .nav a{
+        margin: 0 2em;
+    }
+    .equipe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .equipe figure{
+        width: 16%;
+        border: 1px solid rgb(255, 165, 0);
+    }
+}
